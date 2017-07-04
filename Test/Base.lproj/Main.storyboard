@@ -36,6 +36,9 @@
                             <constraint firstAttribute="trailing" secondItem="2OH-is-ueV" secondAttribute="trailing" id="z40-wV-Ozt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="map" destination="2OH-is-ueV" id="LNF-fj-iyc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
