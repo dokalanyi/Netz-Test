@@ -16,6 +16,7 @@
 		4F9C0A7D1F0B99EC004D400A /* TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C0A7C1F0B99EC004D400A /* TestUITests.swift */; };
 		4F9C0A8B1F0BA15F004D400A /* CustomPIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C0A8A1F0BA15F004D400A /* CustomPIN.swift */; };
 		4F9C0A8F1F0BA9A2004D400A /* NIListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C0A8E1F0BA9A2004D400A /* NIListViewController.swift */; };
+		4F9C0A941F0BB2E5004D400A /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C0A931F0BB2E4004D400A /* compass.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4F9C0A7E1F0B99EC004D400A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F9C0A8A1F0BA15F004D400A /* CustomPIN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPIN.swift; sourceTree = "<group>"; };
 		4F9C0A8E1F0BA9A2004D400A /* NIListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NIListViewController.swift; sourceTree = "<group>"; };
+		4F9C0A931F0BB2E4004D400A /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				4F9C0A911F0BADE2004D400A /* Views */,
 				4F9C0A901F0BADCF004D400A /* Controllers */,
+				4F9C0A921F0BB2E4004D400A /* resources */,
 				4F9C0A5C1F0B99EC004D400A /* AppDelegate.swift */,
 				4F9C0A601F0B99EC004D400A /* Main.storyboard */,
 				4F9C0A631F0B99EC004D400A /* Assets.xcassets */,
@@ -145,6 +148,14 @@
 				4F9C0A8A1F0BA15F004D400A /* CustomPIN.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		4F9C0A921F0BB2E4004D400A /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F9C0A931F0BB2E4004D400A /* compass.png */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F9C0A941F0BB2E5004D400A /* compass.png in Resources */,
 				4F9C0A671F0B99EC004D400A /* LaunchScreen.storyboard in Resources */,
 				4F9C0A641F0B99EC004D400A /* Assets.xcassets in Resources */,
 				4F9C0A621F0B99EC004D400A /* Main.storyboard in Resources */,

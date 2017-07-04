@@ -16,6 +16,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     var pins = Array<CustomPIN>()
     @IBOutlet weak var map: MKMapView!
+    @IBOutlet weak var gotToCurrentLocation: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,16 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let l: UIBarButtonItem = UIBarButtonItem(title: "List", style: .plain, target: self, action: #selector(openList))
         navigationItem.rightBarButtonItems = [l]
     }
+    
+    
+    @IBAction func goToLoc(_ sender: Any) {
+        let location = CLLocation(latitude: self.locationPin.coordinate.latitude, longitude: self.locationPin.coordinate.longitude)
+        let center = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        
+        map.setRegion(region, animated: true)
+    }
+    
     func openList(){
         let listVc: NIListViewController = self.storyboard?.instantiateViewController(withIdentifier: "list_vc") as! NIListViewController
         listVc.pins = self.pins
