@@ -37,7 +37,7 @@ class NIListViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
         let pin: CustomPIN = self.pins[indexPath.row]
         let title = cell.viewWithTag(1) as! UILabel
-        title.text = NSString(format: "Latitude %f, Longitude: %f Distance: %.2f", pin.coordinate.latitude, pin.coordinate.longitude, self.calculateDistance(pointA: pin, pointB: self.locationPin)) as String
+        title.text = NSString(format: "Latitude %f, Longitude: %f Distance: %.2f Meters", pin.coordinate.latitude, pin.coordinate.longitude, self.calculateDistance(pointA: pin, pointB: self.locationPin)) as String
         
         return cell
     }
